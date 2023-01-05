@@ -1,0 +1,126 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk build_versions.compile_sdk
+
+    defaultConfig {
+        minSdk build_versions.min_sdk
+        targetSdk build_versions.target_sdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled shouldMinify
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion versions.compose_version
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+configurations {
+    androidTestDeps.extendsFrom androidTestImplementation
+    testDeps.extendsFrom testImplementation
+}
+
+dependencies {
+
+    api 'androidx.core:core-ktx:1.9.0'
+    api 'androidx.appcompat:appcompat:1.7.0-alpha01'
+
+
+
+    def composeBom = platform('androidx.compose:compose-bom:2022.10.00')
+    api composeBom
+    androidTestImplementation composeBom
+
+    api 'androidx.compose.material3:material3'
+    api 'androidx.compose.material:material'
+    api 'androidx.compose.foundation:foundation'
+    api 'androidx.compose.ui:ui'
+    api 'androidx.compose.ui:ui-tooling-preview'
+    api 'androidx.compose.material:material-icons-core'
+    api 'androidx.compose.material:material-icons-extended'
+    api 'androidx.compose.material3:material3-window-size-class'
+    api "androidx.compose.ui:ui-util:$versions.compose_version"
+    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    api "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+    api 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
+    api "androidx.compose.material3:material3-window-size-class:1.1.0-alpha03"
+    api "androidx.lifecycle:lifecycle-runtime-compose:2.6.0-alpha03"
+    api 'androidx.activity:activity-compose:1.6.1'
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugApi 'androidx.compose.ui:ui-test-manifest'
+    debugApi 'androidx.compose.ui:ui-tooling'
+
+
+    api 'com.google.android.material:material:1.8.0-beta01'
+
+
+    def nav_version = "2.5.3"
+    api "androidx.navigation:navigation-compose:$nav_version"
+
+    api "com.airbnb.android:lottie-compose:5.0.3"
+
+    api("io.coil-kt:coil-compose:2.2.2")
+
+    def activity_version = "1.6.1"
+    api "androidx.activity:activity-ktx:$activity_version"
+
+    api "com.google.accompanist:accompanist-pager:$versions.accomplish"
+    api "com.google.accompanist:accompanist-flowlayout:$versions.accomplish"
+    api 'com.google.accompanist:accompanist-webview:0.26.5-rc'
+    api "com.google.accompanist:accompanist-systemuicontroller:$versions.accomplish"
+    api "com.google.accompanist:accompanist-placeholder-material:$versions.accomplish"
+    api "com.google.accompanist:accompanist-permissions:$versions.accomplish"
+
+    api 'com.jakewharton.timber:timber:5.0.1'
+
+    def emojiVersion = "1.2.0"
+    api "androidx.emoji2:emoji2:$emojiVersion"
+    api "androidx.emoji2:emoji2-views:$emojiVersion"
+
+    implementation "com.google.dagger:hilt-android:$versions.hilt"
+    kapt "com.google.dagger:hilt-compiler:$versions.hilt"
+    implementation "androidx.hilt:hilt-navigation-compose:$versions.hilt_nav"
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test:monitor:1.6.0'
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.4'
+    androidTestImplementation "androidx.test:core:1.5.0"
+    androidTestImplementation "androidx.test:runner:1.5.1"
+    androidTestImplementation "androidx.test:rules:1.5.0"
+    androidTestImplementation "androidx.test.ext:junit:1.1.4"
+    androidTestImplementation "androidx.test.ext:truth:1.5.0"
+
+    androidTestImplementation 'org.mockito:mockito-android:4.9.0'
+    androidTestImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+    testImplementation "org.mockito.kotlin:mockito-kotlin:4.1.0"
+    testImplementation 'junit:junit:4.13.2'
+}

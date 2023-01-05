@@ -1,0 +1,62 @@
+<resources>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="select_a_date">Select a Date</string>
+    <string name="cancel">Cancel</string>
+    <string name="_continue">Continue</string>
+    <string name="_continue_short">Continue</string>
+    <string name="email">Email</string>
+    <string name="phone">Telephone</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="ssn_long">Social Security Number</string>
+    <string name="ssn_short">SSN</string>
+    <string name="birthdate">Date of birth</string>
+    <string name="verify">Verify</string>
+    <string name="general">General</string>
+    <string name="name_n_surname">Name Surname</string>
+    <string name="phone_number">Phone number</string>
+    <string name="save">Save</string>
+    <string name="help">Help</string>
+    <string name="hello">Hello</string>
+    <string name="something_went_wrong">something went wrong</string>
+    <string name="invalid_phone_number">Invalid Phone Number</string>
+    <string name="email_invalid">Please enter a valid Email.</string>
+    <string name="invalid_ssn">Please enter a valid TR Identity Number.</string>
+    <string name="invalid_full_name">Please enter valid Name-Surname.</string>
+    <string name="about">About</string>
+    <string name="terms">Conditions</string>
+    <string name="contact">Communication</string>
+    <string name="call">Ara</string>
+    <string name="address">Address</string>
+    <string name="next">Next</string>
+    <string name="ok">OK</string>
+    <string name="explore_now">Discover Now</string>
+    <string name="terms_of_use">Usage Agreement</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="purchase">Buy</string>
+    <string name="apply">Apply</string>
+    <string name="confirm">Confirm</string>
+    <string name="return_back_to_home_page">Back to Home Page</string>
+    <string name="summary">Summary</string>
+    <string name="search">Ara</string>
+    <string name="month">Ay</string>
+    <string name="year">Year</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="content_description_input_field">Input field for %s</string>
+
+    <string-array name="languages" translatable="false">
+        <item>English</item>
+        <item>Türkçe</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="languages_codes" translatable="false">
+        <item>en</item>
+        <item>tr</item>
+        <item>ru</item>
+    </string-array>
+
+
+</resources>

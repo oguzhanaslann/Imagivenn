@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_up">Kayıt ol</string>
+    <string name="sign_in">Giriş yap</string>
+    <string name="select_a_date">Bir Tarih Seçin</string>
+    <string name="cancel">iptal</string>
+    <string name="_continue">Devam et</string>
+    <string name="_continue_short">Devam</string>
+    <string name="email">Email</string>
+    <string name="phone">Telefon</string>
+    <string name="password">Şifre</string>
+    <string name="reset_password">Şifre Değiştir</string>
+    <string name="ssn_long">T.C Kimlik Numarası</string>
+    <string name="ssn_short">TC</string>
+    <string name="birthdate">Doğum tarihi</string>
+    <string name="verify">Doğrula</string>
+    <string name="general">General</string>
+    <string name="name_n_surname">Ad Soyad</string>
+    <string name="phone_number">Telefon Numarası</string>
+    <string name="save">Kaydet</string>
+    <string name="help">Yardım</string>
+    <string name="hello">Merhaba</string>
+    <string name="something_went_wrong">Bir şeyler yanlış gitti</string>
+    <string name="invalid_phone_number">Geçersiz Telefon Numarası</string>
+    <string name="email_invalid">Lütfen geçerli bir E-posta girin.</string>
+    <string name="invalid_ssn">Lütfen geçerli bir T.C Kimlik Numarası girin.</string>
+    <string name="invalid_full_name">Lütfen geçerli Ad-Soyad girin.</string>
+    <string name="about">Hakkında</string>
+    <string name="terms">Şartlar</string>
+    <string name="contact">İletişim</string>
+    <string name="call">Ara</string>
+    <string name="address">Adres</string>
+    <string name="next">Sonraki</string>
+    <string name="ok">Tamam</string>
+    <string name="explore_now">Hemen Keşfet</string>
+    <string name="terms_of_use">Kullanım Sözleşmesi</string>
+    <string name="privacy_policy">Kişisel Veri Aydınlatma Metni</string>
+    <string name="purchase">Satın al</string>
+    <string name="apply">Uygula</string>
+    <string name="confirm">Onayla</string>
+    <string name="return_back_to_home_page">Ana Sayfaya Dön</string>
+    <string name="summary">Özet</string>
+    <string name="search">Ara</string>
+    <string name="month">Ay</string>
+    <string name="year">Yıl</string>
+    <string name="notifications">Bildirimler</string>
+
+    <string name="content_description_input_field">Input field for %s</string>
+</resources>
